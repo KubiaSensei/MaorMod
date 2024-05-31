@@ -18,7 +18,7 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> JOHNNY_SINS_ORE_PLACED_KEY = registerKey("johnny_sins_ore_placed");
 
-//Check
+
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
