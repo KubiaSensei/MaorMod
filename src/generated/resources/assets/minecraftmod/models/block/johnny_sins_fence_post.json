@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "minecraftmod:block/johnny_sins_block"
+  }
+}

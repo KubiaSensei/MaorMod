@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraftmod:johnny_sins_block"
+    }
+  },
+  "result": {
+    "item": "minecraftmod:johnny_sins_slab",
+    "count": 4
+  }
+}

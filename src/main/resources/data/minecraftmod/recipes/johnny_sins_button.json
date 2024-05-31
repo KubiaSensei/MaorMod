@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraftmod:johnny_sins_ingot"
+    }
+  ],
+  "result": {
+    "item": "minecraftmod:johnny_sins_button"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "johnny_sins_block_place": {
+    "subtitles": "sounds.minecraftmod.johnny_sins_block_place",
+    "sounds": [
+      "minecraftmod:johnny_sins_block_place"
+    ]
+  },
+  "johnny_sins_block_break": {
+    "subtitles": "sounds.minecraftmod.johnny_sins_block_break",
+    "sounds": [
+      "minecraftmod:johnny_sins_block_break"
+    ]
+  },
+  "johnny_sins_block_hit": {
+    "subtitles": "sounds.minecraftmod.johnny_sins_block_hit",
+    "sounds": [
+      "minecraftmod:johnny_sins_block_hit"
+    ]
+  },
+  "johnny_sins_block_fall": {
+    "subtitles": "sounds.minecraftmod.johnny_sins_block_fall",
+    "sounds": [
+      "minecraftmod:johnny_sins_block_fall"
+    ]
+  },
+  "johnny_sins_block_step": {
+    "subtitles": "sounds.minecraftmod.johnny_sins_block_step",
+    "sounds": [
+      "minecraftmod:johnny_sins_block_step"
+    ]
+  }
+}

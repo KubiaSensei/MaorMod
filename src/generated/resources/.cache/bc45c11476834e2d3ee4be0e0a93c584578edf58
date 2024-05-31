@@ -1,0 +1,5 @@
+// 1.20.1	2024-05-31T20:18:49.8550275	Tags for minecraft:block mod id minecraftmod
+982f4f3e0b6ca8010405051e9e4393bf076d83dc data/minecraft/tags/blocks/fences.json
+b6d7a8e2e7b4174966cc6fef6d081ccd48b5ef45 data/minecraft/tags/blocks/fence_gates.json
+ebd78fcea7588fd6deab5d69150da4c6b0d5628d data/minecraft/tags/blocks/mineable/pickaxe.json
+b81f64bdbaeea1c01512b46c3f907c8cf8011efe data/minecraft/tags/blocks/walls.json

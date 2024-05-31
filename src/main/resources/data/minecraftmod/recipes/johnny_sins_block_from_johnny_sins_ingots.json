@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraftmod:johnny_sins_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraftmod:johnny_sins_block"
+  }
+}

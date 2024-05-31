@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "XX",
+    "XX",
+    "XX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraftmod:johnny_sins_block"
+    }
+  },
+  "result": {
+    "item": "minecraftmod:johnny_sins_door",
+    "count": 3
+  }
+}

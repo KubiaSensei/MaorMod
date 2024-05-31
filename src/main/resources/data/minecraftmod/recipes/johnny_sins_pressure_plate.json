@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "XX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraftmod:johnny_sins_block"
+    }
+  },
+  "result": {
+    "item": "minecraftmod:johnny_sins_pressure_plate",
+    "count": 2
+  }
+}

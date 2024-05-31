@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraftmod:block/johnny_sins_slab"
+    },
+    "type=double": {
+      "model": "minecraftmod:block/johnny_sins_block"
+    },
+    "type=top": {
+      "model": "minecraftmod:block/johnny_sins_slab_top"
+    }
+  }
+}
