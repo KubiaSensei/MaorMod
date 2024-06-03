@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraftmod:johnny_sins_ore"
+    },
+    "title": "Daddy Ingot",
+    "description": "Mine Johnny Sins Ore",
+    "background": "minecraftmod:textures/block/johnny_sins_block.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmod:johnny_sins_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

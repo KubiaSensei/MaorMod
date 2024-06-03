@@ -3,9 +3,11 @@ package net.kubia.minecraftmod.datagen;
 import net.kubia.minecraftmod.MinecraftMod;
 import net.kubia.minecraftmod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlockStateProvider extends BlockStateProvider {
@@ -30,6 +32,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.JOHNNY_SINS_TRAPDOOR.get()), modLoc("block/johnny_sins_trapdoor"), true, "cutout");
 
         blockWithItem(ModBlocks.JOHNNY_SINS_ORE);
+
+        logBlock((RotatedPillarBlock) ModBlocks.JOHNNY_SINS_LOG.get());
+
+        blockWithItem(ModBlocks.JOHNNY_SINS_PLANKS);
+        leavesBlock(ModBlocks.JOHNNY_SINS_LEAVES);
+
+    }
+    private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

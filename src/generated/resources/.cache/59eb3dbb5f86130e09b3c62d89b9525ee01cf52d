@@ -1,10 +1,13 @@
-// 1.20.1	2024-05-31T20:18:49.8560244	Loot Tables
+// 1.20.1	2024-06-03T23:26:01.3059504	Loot Tables
 2fdbdca38e27ead9ef474aaa0f5c0bfd633138c8 data/minecraftmod/loot_tables/blocks/johnny_sins_block.json
 5ac69bc2b5a6aaaf893c3d38c6ca181c6d479cfa data/minecraftmod/loot_tables/blocks/johnny_sins_button.json
 17e68befed3b21bc85c3a29b2891853c58a712e0 data/minecraftmod/loot_tables/blocks/johnny_sins_door.json
 d2243c5f241b9a8d149b6cf5d2817891b2b68d27 data/minecraftmod/loot_tables/blocks/johnny_sins_fence.json
 cbbfb95e64f81e1f7bfa041314aec1dc8703b11b data/minecraftmod/loot_tables/blocks/johnny_sins_gate.json
+b504dfbcaf1edd783fdeeff2707b434021c28f3e data/minecraftmod/loot_tables/blocks/johnny_sins_leaves.json
+a9950a54c49e44a2e59f2c6b4868b18f1cf66981 data/minecraftmod/loot_tables/blocks/johnny_sins_log.json
 784d5019e7449b2e3eda7186efe2e6fb866f603e data/minecraftmod/loot_tables/blocks/johnny_sins_ore.json
+0a7e950cfbdfcaa0bf6a4728b29f29f1adcd2951 data/minecraftmod/loot_tables/blocks/johnny_sins_planks.json
 a62d5cb95120a663b5dabe7d352a8e4c22c85ec9 data/minecraftmod/loot_tables/blocks/johnny_sins_pressure_plate.json
 3a350b941e2b2a8ee131d23fed771cb976c54996 data/minecraftmod/loot_tables/blocks/johnny_sins_slab.json
 c6f868d16fd6e9cae71eef750c391e4146c6f993 data/minecraftmod/loot_tables/blocks/johnny_sins_stairs.json

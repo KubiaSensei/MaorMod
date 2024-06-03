@@ -41,6 +41,5 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.JOHNNY_SINS_PRESSURE_PLATE.get(),
                         ModBlocks.JOHNNY_SINS_FENCE.get());
 
-
     }
 }

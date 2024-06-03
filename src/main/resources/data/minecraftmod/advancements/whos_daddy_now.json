@@ -1,0 +1,54 @@
+{
+  "parent": "minecraftmod:johnny_sins_ore",
+  "criteria": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmod:johnny_sins_helmet"
+            ]
+          },
+          {
+            "items": [
+              "minecraftmod:johnny_sins_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "minecraftmod:johnny_sins_leggings"
+            ]
+          },
+          {
+            "items": [
+              "minecraftmod:johnny_sins_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Obatin Full Johnny Sins Armor"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "minecraftmod:johnny_sins_chestplate"
+    },
+    "show_toast": true,
+    "title": "Who's Daddy Now?",
+
+  "requirements": [
+    [
+      "johnny_sins_helmet",
+      "johnny_sins_chestplate",
+      "johnny_sins_leggings",
+      "johnny_sins_boots"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

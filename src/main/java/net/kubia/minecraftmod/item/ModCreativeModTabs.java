@@ -21,6 +21,9 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         //BLOCKS
                         pOutput.accept(ModBlocks.JOHNNY_SINS_BLOCK.get());
+                        pOutput.accept(ModBlocks.JOHNNY_SINS_LOG.get());
+                        pOutput.accept(ModBlocks.JOHNNY_SINS_LEAVES.get());
+                        pOutput.accept(ModBlocks.JOHNNY_SINS_PLANKS.get());
                         pOutput.accept(ModBlocks.JOHNNY_SINS_ORE.get());
                         pOutput.accept(ModBlocks.JOHNNY_SINS_STAIRS.get());
                         pOutput.accept(ModBlocks.JOHNNY_SINS_SLAB.get());

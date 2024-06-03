@@ -1,13 +1,18 @@
 package net.kubia.minecraftmod.block;
 
 import net.kubia.minecraftmod.MinecraftMod;
+import net.kubia.minecraftmod.block.custom.ModFlammableRotatedPillarBlock;
 import net.kubia.minecraftmod.item.ModItems;
 import net.kubia.minecraftmod.sound.ModSounds;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -23,7 +28,47 @@ public class ModBlocks {
     //Johnny Sins Set(Block,Stairs,Walls,etc.)
     public static final RegistryObject<Block> JOHNNY_SINS_BLOCK = registerBlock("johnny_sins_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(ModSounds.JOHNNY_SINS_BLOCK_SOUNDS)));
+    //Trees
+    public static final RegistryObject<Block> JOHNNY_SINS_LOG = registerBlock("johnny_sins_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3)
+                    .sound(ModSounds.JOHNNY_SINS_BLOCK_SOUNDS)));
+    public static final RegistryObject<Block> JOHNNY_SINS_PLANKS = registerBlock("johnny_sins_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .sound(ModSounds.JOHNNY_SINS_BLOCK_SOUNDS)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
 
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+    public static final RegistryObject<Block> JOHNNY_SINS_LEAVES = registerBlock("johnny_sins_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(ModSounds.JOHNNY_SINS_BLOCK_SOUNDS)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
+
+    //Johnny Sins Set(Block,Stairs,Walls,etc.)
     public static final RegistryObject<Block> JOHNNY_SINS_ORE = registerBlock("johnny_sins_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).sound(ModSounds.JOHNNY_SINS_BLOCK_SOUNDS)));
     public static final RegistryObject<Block> JOHNNY_SINS_STAIRS = registerBlock("johnny_sins_stairs",
