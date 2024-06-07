@@ -4,8 +4,10 @@ import net.kubia.minecraftmod.MinecraftMod;
 import net.kubia.minecraftmod.block.custom.ModFlammableRotatedPillarBlock;
 import net.kubia.minecraftmod.item.ModItems;
 import net.kubia.minecraftmod.sound.ModSounds;
+import net.kubia.minecraftmod.worldgen.tree.JohnnySinsTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -28,13 +30,15 @@ public class ModBlocks {
     //Johnny Sins Set(Block,Stairs,Walls,etc.)
     public static final RegistryObject<Block> JOHNNY_SINS_BLOCK = registerBlock("johnny_sins_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(ModSounds.JOHNNY_SINS_BLOCK_SOUNDS)));
+    public static final RegistryObject<Block> SHATTERED_JOHNNY_SINS_BLOCK = registerBlock("shattered_johnny_sins_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.GLASS)));
     //Trees
     public static final RegistryObject<Block> JOHNNY_SINS_LOG = registerBlock("johnny_sins_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3)
-                    .sound(ModSounds.JOHNNY_SINS_BLOCK_SOUNDS)));
+                    .sound(SoundType.WOOD)));
     public static final RegistryObject<Block> JOHNNY_SINS_PLANKS = registerBlock("johnny_sins_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .sound(ModSounds.JOHNNY_SINS_BLOCK_SOUNDS)){
+                    .sound(SoundType.WOOD)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -51,7 +55,7 @@ public class ModBlocks {
                 }
             });
     public static final RegistryObject<Block> JOHNNY_SINS_LEAVES = registerBlock("johnny_sins_leaves",
-            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(ModSounds.JOHNNY_SINS_BLOCK_SOUNDS)){
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.CHERRY_LEAVES)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -95,6 +99,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> JOHNNY_SINS_TRAPDOOR = registerBlock("johnny_sins_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(ModSounds.JOHNNY_SINS_BLOCK_SOUNDS),
                     BlockSetType.OAK));
+
+    public static final RegistryObject<Block> JOHNNY_SINS_SAPLING = registerBlock("johnny_sins_sapling",
+            () -> new SaplingBlock(new JohnnySinsTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
+                    .sound(SoundType.BAMBOO_SAPLING)));
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

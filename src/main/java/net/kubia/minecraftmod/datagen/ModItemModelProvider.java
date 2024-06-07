@@ -37,6 +37,7 @@ public class ModItemModelProvider extends ItemModelProvider {
             buttonItem(ModBlocks.JOHNNY_SINS_BUTTON, ModBlocks.JOHNNY_SINS_BLOCK);
             wallItem(ModBlocks.JOHNNY_SINS_WALL, ModBlocks.JOHNNY_SINS_BLOCK);
 
+            evenSimplerBlockItem(ModBlocks.SHATTERED_JOHNNY_SINS_BLOCK);
             evenSimplerBlockItem(ModBlocks.JOHNNY_SINS_STAIRS);
             evenSimplerBlockItem(ModBlocks.JOHNNY_SINS_SLAB);
             evenSimplerBlockItem(ModBlocks.JOHNNY_SINS_PRESSURE_PLATE);
@@ -54,12 +55,19 @@ public class ModItemModelProvider extends ItemModelProvider {
             simpleItem(ModItems.JOHNNY_SINS_CHESTPLATE);
             simpleItem(ModItems.JOHNNY_SINS_LEGGINGS);
             simpleItem(ModItems.JOHNNY_SINS_BOOTS);
+
+            saplingItem(ModBlocks.JOHNNY_SINS_SAPLING);
         }
         private ItemModelBuilder simpleItem (RegistryObject < Item > item) {
             return withExistingParent(item.getId().getPath(),
                     new ResourceLocation("item/generated")).texture("layer0",
                     new ResourceLocation(MinecraftMod.MOD_ID, "item/" + item.getId().getPath()));
         }
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(MinecraftMod.MOD_ID,"block/" + item.getId().getPath()));
+    }
 
         public void evenSimplerBlockItem (RegistryObject < Block > block) {
             this.withExistingParent(MinecraftMod.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),

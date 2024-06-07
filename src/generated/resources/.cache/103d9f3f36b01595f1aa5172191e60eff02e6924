@@ -1,4 +1,7 @@
-// 1.20.1	2024-05-31T20:35:17.3404283	Registries
+// 1.20.1	2024-06-07T14:52:39.9554656	Registries
 2541bab8ad8a9c7c7fdd548b3a54a7200037ead1 data/minecraftmod/forge/biome_modifier/add_johnny_sins_ore.json
+1b2e1c8e69863e8dc922472b5e5dcf61d9267a53 data/minecraftmod/forge/biome_modifier/add_johnny_sins_tree.json
+b282f76c3a253c4ad238b6a2826ec668a2dfd738 data/minecraftmod/worldgen/configured_feature/johnny_sins.json
 9648bc868cd61720bc963883d070750f92e7305d data/minecraftmod/worldgen/configured_feature/johnny_sins_ore.json
 5232e0834ceb78c958f5287b382e233216afe323 data/minecraftmod/worldgen/placed_feature/johnny_sins_ore_placed.json
+fcf2969776d615c3b1520501059ccab7834ea2fb data/minecraftmod/worldgen/placed_feature/johnny_sins_tree_placed.json

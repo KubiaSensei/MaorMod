@@ -25,6 +25,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.JOHNNY_SINS_BLOCK.get());
+        this.dropSelf(ModBlocks.JOHNNY_SINS_SAPLING.get());
         this.dropSelf(ModBlocks.JOHNNY_SINS_LOG.get());
         this.dropSelf(ModBlocks.JOHNNY_SINS_PLANKS.get());
         this.dropSelf(ModBlocks.JOHNNY_SINS_STAIRS.get());
@@ -34,9 +35,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.JOHNNY_SINS_GATE.get());
         this.dropSelf(ModBlocks.JOHNNY_SINS_WALL.get());
         this.dropSelf(ModBlocks.JOHNNY_SINS_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.SHATTERED_JOHNNY_SINS_BLOCK.get());
 
         this.add(ModBlocks.JOHNNY_SINS_LEAVES.get(), block ->
-                createLeavesDrops(block, ModBlocks.JOHNNY_SINS_BLOCK.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //CHANGE TO SAPLING WHEN CAN
+                createLeavesDrops(block, ModBlocks.JOHNNY_SINS_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(ModBlocks.JOHNNY_SINS_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.JOHNNY_SINS_ORE.get(), ModItems.JOHNNY_SINS_INGOT.get()));

@@ -32,17 +32,23 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.JOHNNY_SINS_TRAPDOOR.get()), modLoc("block/johnny_sins_trapdoor"), true, "cutout");
 
         blockWithItem(ModBlocks.JOHNNY_SINS_ORE);
+        blockWithItem(ModBlocks.SHATTERED_JOHNNY_SINS_BLOCK);
 
         logBlock((RotatedPillarBlock) ModBlocks.JOHNNY_SINS_LOG.get());
 
         blockWithItem(ModBlocks.JOHNNY_SINS_PLANKS);
         leavesBlock(ModBlocks.JOHNNY_SINS_LEAVES);
+        saplingBlock(ModBlocks.JOHNNY_SINS_SAPLING);
 
     }
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(),
                 models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
                         "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

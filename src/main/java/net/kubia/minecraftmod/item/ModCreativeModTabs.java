@@ -47,6 +47,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.JOHNNY_SINS_CHESTPLATE.get());
                         pOutput.accept(ModItems.JOHNNY_SINS_LEGGINGS.get());
                         pOutput.accept(ModItems.JOHNNY_SINS_BOOTS.get());
+                        pOutput.accept(ModBlocks.JOHNNY_SINS_SAPLING.get());
                     })
                     .build());
 
