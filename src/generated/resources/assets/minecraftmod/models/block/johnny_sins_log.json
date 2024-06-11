@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraftmod:block/johnny_sins_log_top",
+    "side": "minecraftmod:block/johnny_sins_log"
+  }
+}

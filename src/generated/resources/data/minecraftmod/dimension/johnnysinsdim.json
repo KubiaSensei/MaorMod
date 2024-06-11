@@ -1,0 +1,11 @@
+{
+  "type": "minecraftmod:johnnysinsdim_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "minecraftmod:johnny_sins_biome"
+    },
+    "settings": "minecraft:amplified"
+  }
+}
