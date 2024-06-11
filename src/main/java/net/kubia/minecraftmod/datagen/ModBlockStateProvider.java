@@ -32,6 +32,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.JOHNNY_SINS_TRAPDOOR.get()), modLoc("block/johnny_sins_trapdoor"), true, "cutout");
 
         blockWithItem(ModBlocks.JOHNNY_SINS_ORE);
+        blockWithItem(ModBlocks.JOHNNY_SINS_GRASS);
         blockWithItem(ModBlocks.SHATTERED_JOHNNY_SINS_BLOCK);
 
         logBlock((RotatedPillarBlock) ModBlocks.JOHNNY_SINS_LOG.get());

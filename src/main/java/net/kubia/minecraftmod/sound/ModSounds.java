@@ -18,6 +18,7 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> JOHNNY_SINS_BLOCK_HIT = registerSoundEvents("johnny_sins_block_hit");
     public static final RegistryObject<SoundEvent> JOHNNY_SINS_BLOCK_FALL = registerSoundEvents("johnny_sins_block_fall");
     public static final RegistryObject<SoundEvent> JOHNNY_SINS_BLOCK_STEP = registerSoundEvents("johnny_sins_block_step");
+    public static final RegistryObject<SoundEvent> JOHNNY_SINS_DIMENSION_BACKGROUND_MUSIC = registerSoundEvents("johnny_sins_dimension_background_music");
 
     public static final ForgeSoundType JOHNNY_SINS_BLOCK_SOUNDS = new ForgeSoundType(1f, 1f,
             ModSounds.JOHNNY_SINS_BLOCK_BREAK, ModSounds.JOHNNY_SINS_BLOCK_PLACE, ModSounds.JOHNNY_SINS_BLOCK_HIT,

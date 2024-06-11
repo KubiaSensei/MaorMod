@@ -32,6 +32,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
             simpleBlockItem(ModBlocks.JOHNNY_SINS_DOOR);
+            simpleBlockItem(ModBlocks.JOHNNY_SINS_GRASS);
 
             fenceItem(ModBlocks.JOHNNY_SINS_FENCE, ModBlocks.JOHNNY_SINS_BLOCK);
             buttonItem(ModBlocks.JOHNNY_SINS_BUTTON, ModBlocks.JOHNNY_SINS_BLOCK);

@@ -2,6 +2,7 @@ package net.kubia.minecraftmod.block;
 
 import net.kubia.minecraftmod.MinecraftMod;
 import net.kubia.minecraftmod.block.custom.ModFlammableRotatedPillarBlock;
+import net.kubia.minecraftmod.block.custom.ModPortalBlock;
 import net.kubia.minecraftmod.item.ModItems;
 import net.kubia.minecraftmod.sound.ModSounds;
 import net.kubia.minecraftmod.worldgen.tree.JohnnySinsTreeGrower;
@@ -22,6 +23,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
+import java.util.function.ToIntFunction;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
@@ -31,7 +33,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> JOHNNY_SINS_BLOCK = registerBlock("johnny_sins_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(ModSounds.JOHNNY_SINS_BLOCK_SOUNDS)));
     public static final RegistryObject<Block> SHATTERED_JOHNNY_SINS_BLOCK = registerBlock("shattered_johnny_sins_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.GLASS)));
+            () -> new ModPortalBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.GLASS).noLootTable().noCollission()));
+    public static final RegistryObject<Block> JOHNNY_SINS_GRASS = registerBlock("johnny_sins_grass",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).sound(SoundType.GRASS)));
     //Trees
     public static final RegistryObject<Block> JOHNNY_SINS_LOG = registerBlock("johnny_sins_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3)

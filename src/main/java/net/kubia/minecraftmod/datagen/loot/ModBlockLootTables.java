@@ -25,6 +25,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.JOHNNY_SINS_BLOCK.get());
+        this.dropSelf(ModBlocks.JOHNNY_SINS_GRASS.get());
         this.dropSelf(ModBlocks.JOHNNY_SINS_SAPLING.get());
         this.dropSelf(ModBlocks.JOHNNY_SINS_LOG.get());
         this.dropSelf(ModBlocks.JOHNNY_SINS_PLANKS.get());
@@ -35,7 +36,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.JOHNNY_SINS_GATE.get());
         this.dropSelf(ModBlocks.JOHNNY_SINS_WALL.get());
         this.dropSelf(ModBlocks.JOHNNY_SINS_TRAPDOOR.get());
-        this.dropSelf(ModBlocks.SHATTERED_JOHNNY_SINS_BLOCK.get());
 
         this.add(ModBlocks.JOHNNY_SINS_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.JOHNNY_SINS_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));

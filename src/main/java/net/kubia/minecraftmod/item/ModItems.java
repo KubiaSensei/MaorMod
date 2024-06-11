@@ -1,8 +1,10 @@
 package net.kubia.minecraftmod.item;
 
 import net.kubia.minecraftmod.MinecraftMod;
+import net.kubia.minecraftmod.entity.ModEntities;
 import net.kubia.minecraftmod.item.custom.ModArmorItem;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
